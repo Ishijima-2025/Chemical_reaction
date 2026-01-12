@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>無題ドキュメント</title>
+<style type="text/css">
+<!--
+.style1 {color: #0000FF}
+.style2 {
+	color: #FF0000;
+	font-size: large;
+}
+.style7 {color: #000000; }
+-->
+</style>
+</head>
+
+<body>
+<h2 class="style1">・一次反応</h2>
+<p>まずは一番単純な，<br />
+  　
+  Ａという物質がＢという物質にランダムに，確率的に変化する<br />
+  という反応です．<br />
+  ここで重要なポイントは，<br />
+  <span class="style2">　
+  ランダム<br />
+  　
+  確率的</span><br />
+  という点です．<br />
+  ここに協調性などが入ってくるとややこしくなりますね．<br />
+  では，”変化”とは何か？<br />
+  何でもいいです．<br />
+  物質の状態そのままでもいいし，<br />
+  　
+  蛍光の退色<br />
+  　
+  原子の崩壊<br />
+でも何でもいいのです．</p>
+<p>さて，ある濃度のＡ溶液があるとします．<br />
+  時間とともに，ＡがＢに変わっていくわけです．<br />
+  <img src="Chemical reactin-01.gif" width="134" height="44" /><br />
+  ここでのポイントは，<br />
+  <span class="style2">　
+Ａ＋Ｂは一定  <br />
+　
+Ｂの濃度の上昇率（Ａの濃度の減少率）はＡの濃度に比例する  <br />
+　
+その比例定数，k，は一定  </span><br />
+  です．<br />
+  考えている世界にはＡとＢしかありませんから，その総量は一定です．<br />
+  Ａはそれぞれ独立に変化しますので，Ａの濃度（数）が多ければ，Ｂの濃度（数）の上昇率，もしくは，Ａの濃度の減少率は上がります．<br />
+  そして，その比例定数は一定（温度が一定なら）とします．</p>
+<p>これを式で表すと，<br />
+  <img src="Chemical reactin-02.gif" width="172" height="62" /><br />
+  となります．<br />
+  式の左はＡの濃度の変化率，右はその際のＡの濃度となります．<br />
+  定常状態においては，左辺の時間変化が０になりますので，<br />
+  [A]=0，となり，Ａの濃度はいずれは０となります．<br />
+  過渡的にはどうなるかというと，あるものを微分すると，同じものが出てくるのは指数関数の典型例ですので，この式を解くと，<br />
+  <img src="Chemical reactin-03.gif" width="142" height="38" /><br />
+  となります．<br />
+  ここで，Ｃ，は未知の定数ですね．<br />
+  この，Ｃ，を求めるには，初期値を導入する必要があります．<br />
+  では，初期値(t=0)において，<br />
+　
+[A]=[A0], [B]=0  <br />
+  を考えます．<br />
+  最初はすべてＡという意味ですね．<br />
+  となると，t=0において，<br />
+  <img src="Chemical reactin-04.gif" width="198" height="40" /><br />
+  となり，<br />
+  <img src="Chemical reactin-05.gif" width="172" height="42" /><br />
+  となります．<br />
+  つまり，Ａの濃度は指数関数的に減少するわけです．</p>
+<p>では，Ｂの濃度はどうなるでしょう？<br />
+  　
+  [A0]=[A]+[B]<br />
+  ですので，<br />
+  <img src="Chemical reactin-06.gif" width="506" height="48" /><br />
+となり，指数関数的に上昇します．</p>
+<p><img src="Chemical reactin-01.jpg" width="480" height="350" /></p>
+<p>この反応で重要なのは，<br />
+  　
+  濃度が半減する時間は初期濃度に依存しない<br />
+  というものです．<br />
+  これをきちんと数式で表すと，濃度が半減，というものは，<br />
+　
+[A0]/2  <br />
+  ですね，それにかかる時間は，<br />
+  <img src="Chemical reactin-07.gif" width="204" height="268" /><br />
+  となり，初期濃度，A0に依存しないことになります．</p>
+<p><img src="Chemical reactin-02.jpg" width="480" height="350" /><br />
+  つまり，このような単純な一次反応の場合，速度定数，k，を求めるには，初期濃度を厳密にコントロールする必要はないのです．<br />
+  最初の濃度，[A0]，がいくらでもいいし，反応生成物，B，が存在してもかまいません．</p>
+<p>では，一個一個の分子を見た場合にはどうなるでしょう？<br />
+  　
+  A -&gt; B<br />
+  上の式と違うのは濃度を示す，括弧，がないことですね．<br />
+  これはエルゴード性，時間平均と数の平均は等しくなる，という仮定から得られるとのことです（ここは勉強不足ですので，厳密には正しくないかもしれません）．<br />
+  ですので，一個一個の分子の変化の時間を見てもその分布は指数関数的になるということです．<br />
+  つまり，とっても早く変化する分子がいっぱいいて，ゆっくり変化する分子はどんどん少なくなってくる，その分布は指数関数的である，ということですね．</p>
+<p>次は二次反応です．</p>
+<p><span class="style7"><a href="kenkyu-2.html"><a href="Chemical reactin-01.html"><img src="L-arrow.png" alt="l" width="57" height="34" /></a></a><a href="kenkyu-2.html"> <img src="TOP.png" alt="t" width="57" height="34" /></a> <a href="Chemical reactin-03.html"><img src="R-arrow.png" alt="r" width="57" height="34" /></a></span></p>
+<p>&nbsp; </p>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>無題ドキュメント</title>
+<style type="text/css">
+<!--
+.style1 {color: #0000FF}
+.style7 {color: #000000; }
+-->
+</style>
+</head>
+
+<body>
+<h3 class="style1">・実際のデータの解析，逐次反応の場合，計算，4状態の場合</h3>
+<p>では，4状態の場合の逐次反応の場合の持続時間の分布を計算してみましょう．</p>
+<p><img src="Chemical reactin-74.gif" width="337" height="50" /><br />
+この反応における観察できる反応は，</p>
+<p><img src="Chemical reactin-23.jpg" width="601" height="338" /></p>
+<p>と単純化できます．<br />
+我々が観察している持続時間は，ｔ，です．<br />
+３つの反応，それぞれのイベントは判定することができません．<br />
+もし，最初のイベントが，ｔ１，であったなら，その次のイベントは，ｔ２は0～ｔ－ｔ１，とならなければなりません．<br />
+最後の反応は残りの時間ですので，t-t1-t2，となります．<br />
+それぞれの時間である確率は，それぞれの時定数，α，β，γによって決まり，</p>
+<p><img src="Chemical reactin-75.gif" width="175" height="47" /></p>
+<p>となります．<br />
+規格化をすると，各反応の分布は，</p>
+<p><img src="Chemical reactin-76.gif" width="237" height="47" /></p>
+<p>となります．<br />
+  つまり，ｔ，であるためには，それぞれの確率の積となりますね．<br />
+  そして，その，ｔ１を０～ｔ，ｔ2を０～ｔ-ｔ1に渡って積分すればいいのですから，</p>
+<p><img src="Chemical reactin-77.gif" width="425" height="102" /></p>
+<p>が求めたい，ｔ，の分布となります．<br />
+整理すると，</p>
+<p><br />
+  解は，</p>
+<p><img src="Chemical reactin-78.gif" width="672" height="825" /></p>
+<p>となります．<br />
+これを整理すると，</p>
+<p><img src="Chemical reactin-79.gif" width="822" height="87" /></p>
+<p>となります．</p>
+<p>この関数も，3状態の逐次反応と同様に，ピークを持つ関数となります．</p>
+<p><img src="chemical reaction-01.png" width="474" height="278" /></p>
+<p><span class="style7"><a href="Chemical reactin-18.html"><img src="L-arrow.png" alt="l" width="57" height="34" /></a> <a href="kenkyu-2.html"> <img src="TOP.png" alt="t" width="57" height="34" /></a> <a href="kenkyu-2.html"><img src="R-arrow.png" alt="r" width="57" height="34" /></a></span><br />
+  <sup><br />
+    </sup></p>
+<p>&nbsp;</p>
+</body>
+</html>

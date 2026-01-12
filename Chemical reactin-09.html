@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>無題ドキュメント</title>
+<style type="text/css">
+<!--
+.style1 {color: #0000FF}
+.style7 {color: #000000; }
+.style2 {
+	color: #FF0000;
+	font-size: large;
+}
+-->
+</style>
+</head>
+
+<body>
+<h3 class="style1">・化学反応の解析，一次反応の場合</h3>
+<p>さて，ではこれらの化学反応の解析はどのようにすればよいでしょう？<br />
+  まず，<span class="style2">濃度変化</span>の場合は簡単ですね．<br />
+  濃度の時間変化をトレースするだけでいいのですから．<br />
+  濃度変化は，吸光度の変化などでよく計測します．<br />
+  ここで，問題はそのフィッティングの仕方．<br />
+  指数関数の減少をフィットするのは，なかなか難しいですね．<br />
+  なぜかというと短調カーブなので，そのフィットがどこまで正しくてどこまで外れているかを判断しにくいのです．<br />
+そこで，よく使うのが対数表示のフィットです．</p>
+<p>まずは，単純な一次反応の場合．<br />
+  濃度変化は，以下の式で表されますね．</p>
+<p><img src="Chemical reactin-05.gif" width="172" height="42" /></p>
+<p>ここで両辺の対数をとります．</p>
+<p><img src="Chemical reactin-51.gif" width="238" height="138" /></p>
+<p>となります．<br />
+  つまり，濃度の対数，Ln(A)，と時間をプロットすると，<br />
+  　
+  Ｙ切片=Ln(A0)<br />
+  　
+  傾き＝-k<br />
+の直線となり，フィッティング，評価がし易くなります．</p>
+<p><img src="Chemical reactin-11.jpg" width="521" height="350" /></p>
+<p>さらに，もう一つの利点は，<br />
+  　
+  重み付けが均等になる<br />
+  というものです．<br />
+  一般的な最小自乗ではフィッティングのカーブからの実験データの差の二乗の和が最小になるように計算します．<br />
+  つまり，<br />
+  　
+  同じ１０％の差でも元の値の大きさによってはその重みが違う<br />
+  ということになります．<br />
+  　
+  １００の１０％は１０<br />
+  　　
+  １０の１０％は　１<br />
+  最小二乗は１０の方の誤差を小さくするように計算するのです．<br />
+  もし，結果の対数をとれば，<br />
+  　
+  １００→２<br />
+  　　
+  １０→１<br />
+  となり，それほど重み付けの差がなくなります．<br />
+  指数関数的減少の場合は，値の高い結果の方（グラフの左，時間が早い）が重み付けが強くかかりますので，対数表示にすれば均等（だいぶ）な重み付けとなります．<br />
+ただし，これはあくまで計算上の問題であり，実際の実験結果の意味をよく考えてフィッティングを行なわないといけません．</p>
+<p><span class="style7"><a href="Chemical reactin-07.html"><a href="Chemical reactin-01.html"><a href="Chemical reactin-07.html"><a href="Chemical reactin-07.html"></a><a href="Chemical reactin-08.html"><img src="L-arrow.png" alt="l" width="57" height="34" /></a></a></a> <a href="kenkyu-2.html"> <img src="TOP.png" alt="t" width="57" height="34" /></a> <a href="Chemical reactin-10.html"><img src="R-arrow.png" alt="r" width="57" height="34" /></a></span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp; </p>
+</body>
+</html>

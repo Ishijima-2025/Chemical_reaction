@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>無題ドキュメント</title>
+<style type="text/css">
+<!--
+.style1 {color: #0000FF}
+.style7 {color: #000000; }
+-->
+</style>
+</head>
+
+<body>
+<h3 class="style1">・実際のデータの解析，逐次反応の場合，計算</h3>
+<p>では，逐次反応の場合の持続時間の分布を計算してみましょう．</p>
+<p><img src="Chemical reactin-59.gif" width="188" height="40" /><br />
+この反応における観察できる反応は，</p>
+<p><img src="Chemical reactin-22.jpg" width="420" height="234" /></p>
+<p>と単純化できます．<br />
+我々が観察している持続時間は，ｔ，です．<br />
+二つの反応，それぞれのイベントは判定することができません．<br />
+ もし，最初のイベントが，ｔ１，であったなら，その次のイベントは，ｔ２＝ｔ－ｔ１，とならなければなりません．<br />
+ｔ１，ｔ２，おのおのの時間である確率は，それぞれの時定数，α，βによって決まり，</p>
+<p><img src="Chemical reactin-60.gif" width="118" height="38" /></p>
+<p>となります．<br />
+規格化をすると，各反応の分布は，</p>
+<p><img src="Chemical reactin-70.gif" width="115" height="31" /></p>
+<p>となります．<br />
+  つまり，ｔ，であるためには，それぞれの確率の積となりますね．<br />
+  そして，その，ｔ１，を０～ｔ，に渡って積分すればいいのですから，</p>
+<p><img src="Chemical reactin-71.gif" width="188" height="66" /></p>
+<p>が求めたい，ｔ，の分布となります．<br />
+解は，</p>
+<p><img src="Chemical reactin-72.gif" width="203" height="383" /></p>
+<p>ここで，係数はヒストグラムには関係ありませんので，</p>
+<p><img src="Chemical reactin-63.gif" width="114" height="34" /></p>
+<p>となります．<br />
+二つの指数関数の差，ですね．<br />
+この分布の様子は，</p>
+<p><img src="Chemical reactin-19.jpg" width="465" height="332" /></p>
+<p>となります．</p>
+<p>2003年の論文，<br />
+  <span id="__firefox-findbar-search-id">Kimura, Y., Toyoshima, N., Hirakawa, N., Okamoto, K.  &amp; <strong>Ishijima, A.</strong> (2003). A kinetic  mechanism for the fast movement of Chara myosin. <em>Journal of Molecular Biology</em> <strong>328</strong>,  939-950.</span><br />
+のFig.5を見ていただけるとわかりやすいのですが，<br />
+　1 uM : 11.2, 10.5 s<sup>-1</sup><br />
+　10 uM :  1025 s<sup>-1</sup><br /> 　
+1 mM :  10.4 s<sup>-1<br />
+</sup>となっています．<br />
+低ＡＴＰ濃度では，上記の考えのように，二つの指数関数の差で表せたのに，ＡＴＰ濃度が高くなると，一つ指数関数となります．<br />
+これは，<br />
+　新しいＡＴＰの結合<br />
+のレートがＡＴＰ濃度により，ＡＴＰ濃度が上がるほど速くなるからです．<br />
+このレートが速くなり，我々の実験系では無視できる程度になり，結局として，ＡＤＰの解離のみの反応のように，見えるためです．</p>
+<p>このような解析を用いることにより，1分子の力学計測でありながら，化学反応も併せて見いだすことができるのです．</p>
+<p>では，もう一つステップが増えた場合はどうなるのでしょう？</p>
+<p><span class="style7"><a href="Chemical reactin-17.html"><img src="L-arrow.png" alt="l" width="57" height="34" /></a> <a href="kenkyu-2.html"> <img src="TOP.png" alt="t" width="57" height="34" /></a> <a href="Chemical reactin-19.html"><img src="R-arrow.png" alt="r" width="57" height="34" /></a></span><br />
+  <sup><br />
+    </sup></p>
+<p>&nbsp;</p>
+</body>
+</html>
