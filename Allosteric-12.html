@@ -1,0 +1,94 @@
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+    processEscapes: true
+  },
+  TeX: {
+    extensions: ["mhchem.js"]
+  },
+  CommonHTML: {
+    matchFontHeight: false
+  }
+});
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML">
+</script>
+
+
+	
+
+
+
+<link href="160324.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+.style7 {color: #000000; }
+</style>
+</head>
+
+<body>
+<p class="X-Large-Bold-RED">アロステリックモデル再考-02</p>
+<p class="Large-Bold-Red">&nbsp;</p>
+<p>つぎに，n=3，の場合について考えていきましょう</p>
+<p class="Large-Bold-Red">n=3，の場合</p>
+<p><img src="Allosteric-02.png" width="539" height="827" alt=""/></p>
+<p>&nbsp;</p>
+<p>まずはT状態とR状態を遷移するモデルを考え，基質SはR状態のみに結合すると考えましょう．</p>
+<p>また，モデルには<span class="X-Large-Bold-RED">3</span>つの結合サイトがあるとします．</p>
+<p class="Red-Bold">TとR</p>
+<p>TとRは平衡状態にあり，その割合Lは，</p>
+<p>\( \Large    L= \frac{T_0}{R_0} \)</p>
+<p>と書けます．</p>
+<p>&nbsp;</p>
+<p class="Red-Bold">解離定数，K<sub>R</sub></p>
+<p>ここで，R状態の基質Sに対する解離定数，K<sub>R</sub>は，</p>
+<p>\( \Large    K_R= \frac{3 R_0 S}{R_1} = \frac{ 2 R_1 S}{2 R_2} = \frac{  R_1 S}{3 R_2}\)</p>
+<p>となります．それぞれの分子・分母に数字ががついている理由は，<br>
+　R<sub>0</sub>には３つの可能な結合サイトがあり，解離するのは１つのみなので，R<sub>0</sub>とRと<sub>1</sub>の平衡では<span class="Blue-Bold">３と１</span><br>
+　R<sub>1</sub>には2つの可能な結合サイトがあり，解離するのは2つの可能性があるので，R<sub>1</sub>とRと<sub>2</sub>の平衡では<span class="Blue-Bold">2と2</span><br>
+　R<sub>2</sub>には1つの可能な結合サイトのみであり，解離するのは3つの可能性があるので，R<sub>2</sub>とRと<sub>3</sub>の平衡では<span class="Blue-Bold">1と3</span><br>
+となるからです．</p>
+<p>&nbsp;</p>
+<p class="Red-Bold">R<sub>1</sub>，R<sub>2</sub>，R<sub>3</sub></p>
+<p>R<sub>1</sub>，R<sub>2</sub>，R<sub>3</sub>は，</p>
+<p>\( \Large R_1 = \frac{3 S}{K_R} R_0 \)</p>
+<p>\( \Large R_2 = \frac{S}{K_R} R_1 = \frac{3 S^2}{ K_R^2} R_0 \)</p>
+<p>\( \Large R_3 = \frac{S}{3 K_R} R_2 = \frac{S^3}{ K_R^3} R_0 \)</p>
+<p>&nbsp;</p>
+<p class="Red-Bold">５状態の結合サイトの総数</p>
+<p>５状態の結合サイトの総数は，各状態に３つずつ結合サイトがありますので，</p>
+<p>\( \Large \begin{eqnarray} \Large 3( T_0 + R_0 + R_1 +R_2 + R_3 )  &amp;=&amp;  3(L R_0 + R_0 + \frac{3 S}{K_R} R_0 + \frac{3 S^2}{ K_R^2} + \frac{S^3}{ K_R^3} R_0) \\<br />
+&amp;=&amp; 
+ 3 R_0 \left[ L + 1 + \frac{3 S}{K_R} R_0 + \frac{3 S^2}{ K_R^2} + \frac{S^3}{ K_R^3} R_0  \right] \\ <br>
+ &amp;=&amp; 
+ 3 R_0 \left[ L + \left( 1 +   \frac{ S}{K_R} \right)^3   \right] \\ <br />
+\end{eqnarray}   \)</p>
+<p>となります．</p>
+<p>&nbsp;</p>
+<p class="Red-Bold">基質Sが結合している数</p>
+<p>基質Sが結合している数は，</p>
+<p>\( \Large \begin{eqnarray} \Large  R_1 +2 R_2  + 3 R_3 &amp;=&amp;   \frac{3 S}{K_R} R_0 + 2 \frac{3 S^2}{K_R^2} R_0 + 3 \frac{ S^2}{K_R^2} R_0\\<br />
+&amp;=&amp; 
+ 3 R_0 \left[   \frac{ S}{K_R}  + 2 \frac{S^2}{K_R^2}  + \frac{ S^2}{K_R^2} \right] \\ <br>
+ &amp;=&amp; 
+ 3 R_0 \frac{ S}{K_R}  \left(   1  + \frac{S}{K_R}  \right)^2 \\ <br />
+\end{eqnarray}   \)</p>
+<p>&nbsp;</p>
+<p class="Red-Bold">基質飽和度</p>
+<p>基質飽和度，Yは，</p>
+<p>\( \Large \begin{eqnarray} Y &amp;=&amp; \frac{R_1 +2 R_2 + 3 R_3 }{3( T_0 + R_0 + R_1 +R_2 + R_3)} \\<br>
+  &amp;=&amp; 
+\frac{ 3 R_0 \frac{ S}{K_R}  \left(   1  + \frac{S}{K_R}  \right)^2 }{3 R_0 \left[ L + \left( 1 +   \frac{ S}{K_R} \right)^3   \right])} \\<br>
+  &amp;=&amp; 
+  \frac{ \frac{ S}{K_R}  \left(   1  + \frac{S}{K_R}  \right)^2}{ L + \left( 1 +   \frac{ S}{K_R} \right)^3   } \\<br>
+\end{eqnarray}   \)  </p>
+<p>となります．</p>
+<p>&nbsp;</p>
+<p>次のページに，n，の場合についての計算を行います．</p>
+<p>&nbsp;</p>
+<p><span class="style7"><a href="Allosteric-11.html"><img src="L-arrow.png" alt="l" width="57" height="34" border="0" /></a><a href="index.html"><img src="TOP.png" alt="t" width="57" height="34" /></a></span><a href="Allosteric-13.html"><img src="R-arrow.png" alt="r" width="57" height="34" /></a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>
