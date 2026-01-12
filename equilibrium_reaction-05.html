@@ -1,0 +1,85 @@
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+    processEscapes: true
+  },
+  TeX: {
+    extensions: ["mhchem.js"]
+  },
+  CommonHTML: {
+    matchFontHeight: false
+  }
+});
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML">
+</script>
+
+
+	
+
+
+
+<link href="160324.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+.style7 {color: #000000; }
+</style>
+<meta charset="UTF-8">
+<title>equilibrium_reaction</title>
+</head>
+
+<body>
+<p class="X-Large-Bold-RED">化学平衡論</p>
+<p>&nbsp;</p>
+<p class="Large-Bold-Red">基質の結合曲線，対数表示-2</p>
+<p>\( \Large     \displaystyle P_B =  \frac{1}{  1 +    e^{ -2.3( [L]_{10} - log \ K)}} \)</p>
+<p>ですが，計算を簡単にするために，</p>
+<p>\( \Large     \displaystyle y=  \frac{1}{  1 +    e^{ -a( x - x_0)}} \)</p>
+<p>を検討していきます．</p>
+<p>一階微分は，</p>
+<p>\( \Large     \displaystyle \frac{dy}{dx} =  \frac{a \cdot e^{ -a( x - x_0)}}{  \left( 1 +    e^{ -a( x - x_0)} \right)^2 } \)</p>
+<p>二階微分は，</p>
+<p>\( \Large     \displaystyle \frac{d^2 y}{dx^2} =  \frac{2 \left( a \cdot e^{ -a( x - x_0)} \right)^2}{  \left( 1 +    e^{ -a( x - x_0)} \right)^3 } <br>
++   \frac{-a^2 \cdot e^{ -a( x - x_0)}}{  \left( 1 +    e^{ -a( x - x_0)} \right)^2 }\)</p>
+<p>\( \Large     \displaystyle=  \frac{2 \left( a \cdot e^{ -a( x - x_0)} \right)^2}{  \left( 1 +    e^{ -a( x - x_0)} \right)^3 } <br>
++   \frac{\left( -a^2 \cdot e^{ -a( x - x_0)} \right)  \left( 1 +    e^{ -a( x - x_0)} \right) }{  \left( 1 +    e^{ -a( x - x_0)} \right)^3 }\)</p>
+<p>\( \Large     \displaystyle=  \frac{2 \left( a \cdot e^{ -a( x - x_0)} \right)^2}{  \left( 1 +    e^{ -a( x - x_0)} \right)^3 } <br>
++   \frac{ -a^2 \cdot e^{ -a( x - x_0)} - a^2 \cdot   e^{ -2a( x - x_0)}  }{  \left( 1 +    e^{ -a( x - x_0)} \right)^3 }\)</p>
+<p>\( \Large     \displaystyle=  \frac{a^2 \cdot e^{ -2a( x - x_0)} - a^2 \cdot e^{ -a( x - x_0)}}{  \left( 1 +    e^{ -a( x - x_0)} \right)^3 } \)</p>
+<p>\( \Large     \displaystyle=  \frac{a^2 \cdot e^{ -a( x - x_0)} \left(     e^{ -a( x - x_0)} -1 \right) }{  \left( 1 +    e^{ -a( x - x_0)} \right)^3 } \)</p>
+<p>最大の傾きは，二階微分の値が０となる場所なので，</p>
+<p>\( \Large     \displaystyle \frac{d^2 y}{dx^2} =  \frac{a^2 \cdot e^{ -a( x - x_0)} \left(     e^{ -a( x - x_0)} -1 \right) }{  \left( 1 +    e^{ -a( x - x_0)} \right)^3 } = 0\)</p>
+<p>\( \Large     \displaystyle      e^{ -a( x - x_0)} = 1\)</p>
+<p>\( \Large     \displaystyle -a( x - x_0)   = 0\)</p>
+<p>したがって，</p>
+<p>\( \Large     \displaystyle x =  x_0   \)</p>
+<p>の点で最大の傾きとなります．</p>
+<p>ここで元の式と比較してみると，</p>
+<p>\( \Large     \displaystyle P_B =  \frac{1}{  1 +    e^{ -2.3( [L]_{10} - log \ K)}} \)</p>
+<p>\( \Large     \displaystyle a = 2.3 \)</p>
+<p>\( \Large     \displaystyle x_0 = log \ K \)</p>
+<p>なので，</p>
+<p>\( \Large     \displaystyle  [L]_{10} = log [L] = log \ K \)</p>
+<p>つまり，</p>
+<p>\( \Large     \displaystyle   [L] =  K \)</p>
+<p>の点で最大の傾きとなります． その時の値は， </p>
+<p>\( \Large     \displaystyle P_B =  \frac{1}{  1 +    e^{ -2.3(0)}} = \frac{1}{2} \)</p>
+<p>となります，その時の傾きは，</p>
+<p>\( \Large     \displaystyle \left. \frac{d  y}{dx} \right|_{x= x_0} =   \frac{a \cdot e^{ -a( 0)}}{  \left( 1 +    e^{ -a( 0)} \right)^2 } = \frac{a}{4} \)</p>
+<p>となるので，</p>
+<p>\( \Large     \displaystyle \left. \frac{d  \ P_B}{dL} \right|_{[L]= K} =   \frac{2.3}{4} = \frac{1}{ 4 \ log (e)} = 0.575 \)</p>
+<p>と<span class="Large-Bold-Red">Kに依存しない</span>ことがわかります．</p>
+<p>図示すると，</p>
+<p><img src="equilibrium_reaction-04.png" width="554" height="349" alt=""/></p>
+<p>とKを変えても傾きが同じ（シフトする）ことがわかります．</p>
+<p>&nbsp;</p>
+<p>リニア表示の場合には，最大傾きはKに依存しましたが，対数表示するとKに依存しなくなります．</p>
+<p>この問題について，次ページで検討していきます．</p>
+<p>&nbsp;</p>
+<p><span class="style7"><a href="equilibrium_reaction-04.html"><img src="L-arrow.png" alt="l" width="57" height="34" /></a><a href="kenkyu-2.html"><img src="TOP.png" alt="t" width="57" height="34" /></a></span><a href="equilibrium_reaction-06.html"><img src="R-arrow.png" alt="r" width="57" height="34" /></a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>

@@ -1,0 +1,61 @@
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+    processEscapes: true
+  },
+  TeX: {
+    extensions: ["mhchem.js"]
+  },
+  CommonHTML: {
+    matchFontHeight: false
+  }
+});
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML">
+</script>
+
+
+	
+
+
+
+<link href="160324.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+.style7 {color: #000000; }
+</style>
+<meta charset="UTF-8">
+<title>equilibrium_reaction</title>
+</head>
+
+<body>
+<p class="X-Large-Bold-RED">化学平衡論</p>
+<p>&nbsp;</p>
+<p class="Large-Bold-Red">基質の結合曲線</p>
+<p>Aに基質，Lが結合し，Bとなる反応において，最大の傾きを考えます．</p>
+<p>\( \Large     \displaystyle P_B =  \frac{[L]}{K + [L] }  \)</p>
+<p>\( \Large     \displaystyle \frac{d \ P_B}{dL} =  \frac{-[L]}{(K + [L])^2 }  + \frac{[L]}{K + [L] }  = \frac{K}{(K + [L])^2 } \)</p>
+<p>\( \Large     \displaystyle \frac{d^2 \ P_B}{dL^2} =  \frac{-2 \cdot K \cdot [L] }{(K + [L])^3 } \)　</p>
+<p>となるので，<span class="Blue-Bold">[L]=0が最大の傾き</span>．となります． その傾きは， </p>
+<p>\( \Large     \displaystyle \left. \frac{d  \ P_B}{dL} \right|_{[L]=0} =   \frac{K}{(K +0)^2  } = \frac{1}{K}\)</p>
+<p>&nbsp;</p>
+<p><span class="Blue-Bold">[L]=K</span>の時の傾きは，</p>
+<p>\( \Large     \displaystyle \left. \frac{d  \ P_B}{dL} \right|_{[L]=K} =   \frac{K}{(K +K)^2  } = \frac{1}{4K}\)</p>
+<p>&nbsp;</p>
+<p><span class="Blue-Bold">[L]=∞</span>の時の傾きは，</p>
+<p>\( \Large     \displaystyle \left. \frac{d  \ P_B}{dL} \right|_{[L]= \infty} =   \frac{K}{(K + \infty )^2  } = 0 \)</p>
+<p>&nbsp;</p>
+<p>図示すると，</p>
+<p><img src="equilibrium_reaction-02.png" width="752" height="452" alt=""/></p>
+<p>となります．解離定数Kにより，急峻さが変化することがわかります．</p>
+<p>&nbsp;</p>
+<p>しかし，実際の論文ではこのような表記で示すことはあまりなく，<span class="Blue-Bold">横軸（基質濃度）の常用対数表示</span>となります．</p>
+<p>次に，基質濃度を常用対数表示について検討します．</p>
+<p>&nbsp;</p>
+<p><span class="style7"><a href="equilibrium_reaction-02.html"><img src="L-arrow.png" alt="l" width="57" height="34" /></a><a href="kenkyu-2.html"><img src="TOP.png" alt="t" width="57" height="34" /></a></span><a href="equilibrium_reaction-04.html"><img src="R-arrow.png" alt="r" width="57" height="34" /></a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>

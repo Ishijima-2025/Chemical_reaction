@@ -1,0 +1,110 @@
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+    processEscapes: true
+  },
+  TeX: {
+    extensions: ["mhchem.js"]
+  },
+  CommonHTML: {
+    matchFontHeight: false
+  }
+});
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML">
+</script>
+
+
+	
+
+
+
+<link href="160324.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+.style7 {color: #000000; }
+</style>
+<meta charset="UTF-8">
+<title>equilibrium_reaction</title>
+</head>
+
+<body>
+<p class="X-Large-Bold-RED">化学平衡論</p>
+<p>&nbsp;</p>
+<p class="Large-Bold-Red">基質の結合曲線，リニア vs. 対数表示</p>
+<p><span class="Blue-Bold">[L]=K</span>の時の傾きは，</p>
+<p><span class="Red-Bold">リニア表示</span>の場合，</p>
+<p>\( \Large     \displaystyle \left. \frac{d  \ P_B}{dL} \right|_{[L]=K} =   \frac{K}{(K +K)^2  } = \frac{1}{4K}\)</p>
+<p>と<span class="Large-Bold-Red">Kに依存</span>します．</p>
+<p><span class="Red-Bold">対数表示</span>の場合は，</p>
+<p>\( \Large     \displaystyle \left. \frac{d  \ P_B}{dL} \right|_{[L]= K} =   \frac{2.3}{4} = \frac{1}{ 4 \ log (e)} = 0.575 \)</p>
+<p>と<span class="Large-Bold-Red">Kに依存しない</span>ことがわかります．</p>
+<p>&nbsp;</p>
+<p>これら両者の関係は，</p>
+<p>\( \Large     \displaystyle \left. \frac{d  \ P_B}{dL} \right|_{[L]=K} =   \left. \frac{d  \ P_B}{d \ log \ L} \frac{d \ log \ L} {L} \right|_{[L]=K}<br>
+=   \left. \frac{d  \ P_B}{d \ log \ L}  \right|_{[L]=K} \left.  \frac{d \ log \ L} {L} \right|_{[L]=K}\)</p>
+<p>となります．</p>
+<p>\( \Large     \displaystyle  \left.  \frac{d \ log \ L} {L} \right|_{[L]=K}\)</p>
+<p>ですが，</p>
+<p>\( \Large     \displaystyle  log \ L = y \rightarrow L = 10^y \rightarrow ln \ L =ln \ 10^y = y \cdot ln 10 = \frac{ln L}{2.3} \)</p>
+<p>なので，</p>
+<p>\( \Large     \displaystyle  \left.  \frac{d \ log \ L} {L} \right|_{[L]=K} =\frac{1}{2.3}   \left.  \frac{d \ ln \ L} {L} \right|_{[L]=K} = \frac{1}{2.3 K} \)</p>
+<p>となるので，</p>
+<p>\( \Large     \displaystyle \left. \frac{d  \ P_B}{dL} \right|_{[L]=K} 
+=   \left. \frac{d  \ P_B}{d \ log \ L}  \right|_{[L]=K} \frac{1}{2.3 K} \)</p>
+<p>となり，それぞれ，</p>
+<p>\( \Large     \displaystyle  \frac{1}{4K} 
+=      \frac{2.3}{4} \frac{1}{2.3 K} \)</p>
+<p>となり，一致することがわかります．</p>
+<p>&nbsp;</p>
+<p>対数表示にすると，</p>
+<p><img src="equilibrium_reaction-04.png" width="554" height="349" alt=""/></p>
+<p>環境が変化すると，解離定数Kが変わったときに，カーブがシフトすることからわかりやすくなりますね．</p>
+<p>しかし，横軸の基質濃度が対数なので，<br>
+　<span class="Large-Bold-Blue">幅広い濃度域での実験</span><br>
+が必要となり，さらに，<br>
+　<span class="Large-Bold-Blue">変曲点での濃度域での実験</span><br>
+が必要となります．</p>
+<p>ちなみに，1～10の濃度範囲（ｍMでもμMでもなんでも）では，</p>
+<table width="531" border="1">
+  <tbody>
+    <tr>
+      <td width="60">log C</td>
+      <td width="26">0.0</td>
+      <td width="26">0.1</td>
+      <td width="26">0.2</td>
+      <td width="26">0.3</td>
+      <td width="26">0.4</td>
+      <td width="26">0.5</td>
+      <td width="26">0.6</td>
+      <td width="26">0.7</td>
+      <td width="26">0.8</td>
+      <td width="26">0.9</td>
+      <td width="26">1.0</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>1.00</td>
+      <td>1.26</td>
+      <td>1.58</td>
+      <td>2.00</td>
+      <td>2.51</td>
+      <td>3.16</td>
+      <td>3.98</td>
+      <td>5.01</td>
+      <td>6.31</td>
+      <td>7.94</td>
+      <td>10.0</td>
+    </tr>
+  </tbody>
+</table>
+<p>と１～4の範囲を重点的に実験することが必要となります．</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span class="style7"><a href="equilibrium_reaction-05.html"><img src="L-arrow.png" alt="l" width="57" height="34" /></a><a href="kenkyu-2.html"><img src="TOP.png" alt="t" width="57" height="34" /></a></span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>

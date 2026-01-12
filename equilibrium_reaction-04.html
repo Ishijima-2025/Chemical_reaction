@@ -1,0 +1,80 @@
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+    processEscapes: true
+  },
+  TeX: {
+    extensions: ["mhchem.js"]
+  },
+  CommonHTML: {
+    matchFontHeight: false
+  }
+});
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML">
+</script>
+
+
+	
+
+
+
+<link href="160324.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+.style7 {color: #000000; }
+</style>
+<meta charset="UTF-8">
+<title>equilibrium_reaction</title>
+</head>
+
+<body>
+<p class="X-Large-Bold-RED">化学平衡論</p>
+<p>&nbsp;</p>
+<p class="Large-Bold-Red">基質の結合曲線，対数表示</p>
+<p>\( \Large     \displaystyle P_B =  \frac{[L]}{K + [L] }  \)</p>
+<p>を並べ替えて，</p>
+<p>\( \Large     \displaystyle [L] = P_B \cdot K + P_B \cdot [L]  \)</p>
+<p>\( \Large     \displaystyle [L] =  \frac{P_B \cdot K}{1 - P_B }  \)</p>
+<p>\( \Large     \displaystyle [L]_{10}  \equiv  log_{10} [L] = log_{10} \frac{P_B \cdot K}{1 - P_B }  \)</p>
+<p>\( \Large     \displaystyle \frac{P_B \cdot K}{1 - P_B } = 10^{[L]_{10}} \)</p>
+<p>\( \Large     \displaystyle P_B \cdot K = 10^{ [L]_{10}} - 10^{ [L]_{10}}  \cdot P_B  \)</p>
+<p>\( \Large     \displaystyle P_B \left( K  + 10^{ [L]_{10}}    \right) = 10^{ [L]_{10}}\)</p>
+<p>\( \Large     \displaystyle P_B = \frac{10^{ [L]_{10}}}{ K  + 10^{ [L]_{10}}    }  = \frac{1}{  1 + 10^{ -[L]_{10}} \cdot K  } \)</p>
+<p>となります．</p>
+<p>ここで，常用対数と自然対数の関係から，</p>
+<p>\( \Large     \displaystyle 10^{-x} = e^y \rightarrow y = ln 10^{-x} = -x \ ln 10 \)</p>
+<p>\( \Large     \displaystyle  10^{-x} = e^y  =e^{ -x \ ln 10} = e^{-2.3x} \)</p>
+<p>となるので，</p>
+<p>\( \Large     \displaystyle P_B =  \frac{1}{  1 + e^{ -2.3 [L]_{10}} \cdot K  } \)</p>
+<p>ここで，分母のKも指数表示したいので，</p>
+<p>\( \Large     \displaystyle K = e^z\)</p>
+<p>\( \Large     \displaystyle ln K = z\)</p>
+<p>\( \Large     \displaystyle K = e^{ln K} \)</p>
+<p>\( \Large     \displaystyle log K = log e^z = z \ log e = 0.43 z \)</p>
+<p>\( \Large     \displaystyle z = \frac{1}{0.43} log K = 2.3 \ log K \)</p>
+<p>\( \Large     \displaystyle K =  e^{2.3 \ log K} \)</p>
+<p>として，</p>
+<p>\( \Large     \displaystyle P_B =  \frac{1}{  1 +   e^{2.3 \ log K} e^{ -2.3 [L]_{10}} }=  \frac{1}{  1 +    e^{ -2.3( [L]_{10} - log \ K)}} \)</p>
+<p>となり， これは<span class="Large-Bold-Red">シグモイド型関数</span>となります． </p>
+<p>&nbsp;</p>
+<p><span class="Red-Bold">シグモイド曲線</span>とは，</p>
+<p>\( \Large     \displaystyle y=  \frac{1}{  1 +    e^{ - a( x - x_0)}} \)</p>
+<p>であり，</p>
+<p><span class="Blue-Bold">x= -∞</span>，においては，<span class="Red-Bold">y = 0</span></p>
+<p><span class="Blue-Bold">x= ∞</span>，においては，<span class="Red-Bold">y = 1</span></p>
+<p><span class="Blue-Bold">x= x<sub>0</sub></span>，においては，<span class="Red-Bold">y=1/2</span></p>
+<p>となります．</p>
+<p><img src="equilibrium_reaction-03.png" width="454" height="238" alt=""/></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>次に，常用対数表示の詳細について検討します．</p>
+<p>&nbsp;</p>
+<p><span class="style7"><a href="equilibrium_reaction-03.html"><img src="L-arrow.png" alt="l" width="57" height="34" /></a><a href="kenkyu-2.html"><img src="TOP.png" alt="t" width="57" height="34" /></a></span><a href="equilibrium_reaction-05.html"><img src="R-arrow.png" alt="r" width="57" height="34" /></a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>

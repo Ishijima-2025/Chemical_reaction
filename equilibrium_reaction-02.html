@@ -1,0 +1,79 @@
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+    processEscapes: true
+  },
+  TeX: {
+    extensions: ["mhchem.js"]
+  },
+  CommonHTML: {
+    matchFontHeight: false
+  }
+});
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML">
+</script>
+
+
+	
+
+
+
+<link href="160324.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+.style7 {color: #000000; }
+</style>
+<meta charset="UTF-8">
+<title>equilibrium_reaction</title>
+</head>
+
+<body>
+<p class="X-Large-Bold-RED">化学平衡論</p>
+<p>&nbsp;</p>
+<p class="Large-Bold-Red">基質の結合</p>
+<p>Aに基質，Lが結合し，Bとなる反応を考えます．</p>
+<p>\( \Large     \hspace{15 pt} \ce{A + L &lt;=&gt;C[ k_{+} ][k_{-}]B} \)</p>
+<p>\( \Large     \hspace{15 pt} \ce{A + L &lt;&lt;=&gt;C[ k_{+} ][k_{-}]B} \)</p>
+<p>もしくは，</p>
+<p>\( \Large     \hspace{15 pt} \ce{A  &lt;=&gt;C[ k_{+} +L ][k_{-}]B} \)</p>
+<p>を考えます．平衡状態においては，</p>
+<p>\( \Large     k_{+} \cdot [A] \cdot [L] = k_{-} \cdot [B] \)</p>
+<p>\( \Large          \displaystyle K = \frac{ [A] \cdot [L]}{ [B] } = \frac{k_{-}}{k_{+}} \)</p>
+<p>が成り立つ．ここで，<span class="Red-Bold">Ｋを解離定数</span>と呼び，<span class="Red-Bold">1/M</span>の次元を持ちます．</p>
+<p>ここで<span class="Red-Bold">k<sub>-</sub>の次元は1/s</span>ですが，<span class="Red-Bold">k<sub>+</sub>の次元は，1/s 1/M</span>となることに注意です．</p>
+<p>&nbsp;</p>
+<p>それぞれの存在確率の比は，</p>
+<p>\( \Large     \displaystyle \frac{P_A}{P_B} =  \frac{[A]}{[B]} = \frac{K}{[L]} \)</p>
+<p>となります．保存則より，</p>
+<p>\( \Large      P_A + P_B = 1\)</p>
+<p>が成り立つので，</p>
+<p>\( \Large     \displaystyle \frac{P_A}{1 - P_A} =  \frac{[A]}{[B]} = \frac{K}{[L]} \)</p>
+<p>\( \Large     \displaystyle P_A \cdot [L] = K - K \cdot  P_A \)</p>
+<p>\( \Large     \displaystyle P_A \left( [L] + K \right) = K \)</p>
+<p>\( \Large     \displaystyle P_A =  \frac{K}{K + [L] }  \)</p>
+<p>\( \Large     \displaystyle P_B =  \frac{[L]}{K + [L] }  \)</p>
+<p>となります．</p>
+<p>&nbsp;</p>
+<p> <span class="Blue-Bold">[L]=0</span>においては， </p>
+<p>\( \Large     \displaystyle P_A =  \frac{K}{K + 0 } = 1 \)</p>
+<p>\( \Large     \displaystyle P_B =  \frac{0}{K + 0 } = 0 \)</p>
+<p>&nbsp;</p>
+<p><span class="Blue-Bold">[L]=∞</span>においては， </p>
+<p>\( \Large     \displaystyle P_A =  \frac{K}{K + \infty } = 0 \)</p>
+<p>\( \Large     \displaystyle P_B =  \frac{\infty}{K + \infty } = 1 \)</p>
+<p>&nbsp;</p>
+<p><span class="Blue-Bold">[L]=K</span>においては， </p>
+<p>\( \Large     \displaystyle P_A =  \frac{K}{K + K } = \frac{1}{2} \)</p>
+<p>\( \Large     \displaystyle P_B =  \frac{K}{K + K } = \frac{1}{2} \)</p>
+<p>となります．つまり，<span class="Red-Bold">解離定数Ｋとは，</span><span class="Large-Bold-Red">複合体が50％</span><span class="Red-Bold">となる基質濃度</span>です．</p>
+<p>　</p>
+<p>次に，この反応の詳細について考えます．</p>
+<p>&nbsp;</p>
+<p><span class="style7"><a href="equilibrium_reaction-01.html"><img src="L-arrow.png" alt="l" width="57" height="34" /></a><a href="kenkyu-2.html"><img src="TOP.png" alt="t" width="57" height="34" /></a></span><a href="equilibrium_reaction-03.html"><img src="R-arrow.png" alt="r" width="57" height="34" /></a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>

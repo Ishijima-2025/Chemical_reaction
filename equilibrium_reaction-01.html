@@ -1,0 +1,74 @@
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+    processEscapes: true
+  },
+  TeX: {
+    extensions: ["mhchem.js"]
+  },
+  CommonHTML: {
+    matchFontHeight: false
+  }
+});
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML">
+</script>
+
+
+	
+
+
+
+<link href="160324.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+.style7 {color: #000000; }
+</style>
+<meta charset="UTF-8">
+<title>equilibrium_reaction</title>
+</head>
+
+<body>
+<p class="X-Large-Bold-RED">化学平衡論</p>
+<p>&nbsp;</p>
+<p><span class="Red-Bold">化学平衡論</span>について，基質濃度と存在確率との関係について考えていきます．</p>
+<p>&nbsp;</p>
+<p class="Large-Bold-Red">一次の化学平衡</p>
+<p>単純な一次の化学平衡において，</p>
+<p>\( \Large     \hspace{15 pt} \ce{A  &lt;=&gt;C[ k_{AB} ][k_{BA}]B} \)</p>
+<p>を考えます．A状態とB状態は平衡状態にあり，各々行き来しながらそれぞれの滞在割合は一定であると言えます．</p>
+<p>それぞれのエネルギー状態は，E<sub>A</sub>, E<sub>B</sub>である．ここで，E<sub>A</sub>＞E<sub>B</sub>，とします．</p>
+<p><img src="equilibrium_reaction-01.png" width="366" height="285" alt=""/></p>
+<p>各状態の存在比がボルツマン分布に従うとして，それぞれの存在確率は，</p>
+<p>\( \Large     \displaystyle P_A  \propto exp \left[ - \frac{E_A}{k_B T} \right] \)</p>
+<p>\( \Large     \displaystyle P_B  \propto exp \left[ - \frac{E_B}{k_B T} \right] \)</p>
+<p>その比は，</p>
+<p>\( \Large     \displaystyle \frac{P_A}{P_B} =  exp \left[ - \frac{E_A - E_B}{k_B T} \right] =  exp \left[ - \frac{\Delta E}{k_B T} \right]\)</p>
+<p>となります．ここで，前提として，E<sub>A</sub>＞E<sub>B</sub>，なので，ΔE&gt;0，となります．つまり，</p>
+<p>\( \Large     \displaystyle \frac{P_A}{P_B} &lt; 1 \rightarrow P_A &lt; P_B \)</p>
+<p>となります．エネルギー状態が低いほうが存在確率が大きいのは納得できます．</p>
+<p>&nbsp;</p>
+<p>この場合の平衡は，</p>
+<p>\( \Large     k_{BA} \cdot P_A = k_{AB} \cdot P_B \)</p>
+<p>となるので，平衡定数Kを使って，</p>
+<p>\( \Large     K \equiv \frac{k_{BA}}{k_{AB}} = \frac{ P_B}{ P_A } \)</p>
+<p>となります（平衡状態においてKの定義が上記でいいのか，その逆数がいいのかは，よく知らないです）</p>
+<p>&nbsp;</p>
+<p>ここで，A，	Bという二状態のみ考えているので，保存則より，</p>
+<p>\( \Large      P_A + P_B = 1\)</p>
+<p>が成り立つので，</p>
+<p>\( \Large           \displaystyle P_A + \frac{P_A}{K} = 1\)</p>
+<p>\( \Large           \displaystyle P_A \left( 1+ \frac{1}{K} \right) = 1\)</p>
+<p>\( \Large           \displaystyle P_A =\frac{1}{1+K} = \frac{K}{1+K} \)</p>
+<p>\( \Large           \displaystyle P_B = \frac{1}{1+K} \)</p>
+<p>が成り立ちます．</p>
+<p>&nbsp;</p>
+<p>次に，基質が結合する反応を考えます．</p>
+<p>&nbsp;</p>
+<p><span class="style7"><a href="kenkyu-2.html"><img src="TOP.png" alt="t" width="57" height="34" /></a></span><a href="equilibrium_reaction-02.html"><img src="R-arrow.png" alt="r" width="57" height="34" /></a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>
