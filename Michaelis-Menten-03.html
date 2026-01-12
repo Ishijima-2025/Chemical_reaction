@@ -1,0 +1,81 @@
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+    processEscapes: true
+  },
+  TeX: {
+    extensions: ["mhchem.js"]
+  },
+  CommonHTML: {
+    matchFontHeight: false
+  }
+});
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML">
+</script>
+
+
+	
+
+
+
+<link href="160324.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+.style7 {color: #000000; }
+</style>
+</head>
+
+<body>
+<p class="X-Large-Bold-RED">ミカエリスメンテン-競争阻害-03</p>
+<p class="Large-Bold-Red">&nbsp;</p>
+<p>次に，以下の反応スキームのように阻害剤が<span class="Red-Bold">酵素[E]</span>に影響を与える場合にどうなるかを考えていきましょう．</p>
+<p>\( \Large     \hspace{15 pt} \ce{E  &lt;=&gt;C[S][]ES -&gt;C[] E + P} \)<br>
+\( \Large     I \downarrow \uparrow \)</p>
+<p> \( \Large     \hspace{10 pt} EI \)</p>
+<p>この場合を<span class="Large-Bold-Red">競争阻害</span>，と呼びます．</p>
+<p>解離定数を定義します．</p>
+<p>\( \Large     K_m \equiv \frac{[E][S]}{[ES]} \)</p>
+<p>\( \Large     K_I \equiv \frac{[E][I]}{[EI]} \)</p>
+<p>書き直すと，</p>
+<p>\( \Large     [E] =  \frac{K_m}{[S]} \cdot [ES] \)</p>
+<p>\( \Large     \begin{eqnarray} [EI] &amp;=&amp;  \frac{[I]}{K_I} \cdot [E] \\<br>
+  &amp;=&amp; 
+\frac{[I]}{K_I} \cdot \frac{K_m}{[S]} \cdot [ES] \\<br>
+\end{eqnarray}   \)</p>
+<p>酵素の保存則，</p>
+<p>\( \Large     [E_T] = [E] + [ES] + [EI] \)</p>
+<p>を使うと，</p>
+<p>\( \Large     \begin{eqnarray} [E_T] &amp;=&amp; \frac{K_m}{[S]} \cdot [ES] + [ES] + \frac{[I]}{K_I} \cdot \frac{K_m}{[S]} \cdot [ES] \\<br>
+  &amp;=&amp; [ES] \cdot \left( 1 + 
+\frac{K_m}{[S]}  + \frac{[I]}{K_I} \cdot \frac{K_m}{[S]} \right) \\<br>
+&amp;=&amp; [ES] \cdot \left( \frac{K_I \cdot [S] +K_I \cdot K_m + K_m \cdot [I]}{K_I \cdot [S]} \right)  \\<br>
+\end{eqnarray}   \)</p>
+<p>\( \Large     [ES] =  [E_T] \frac{K_I \cdot [S]}{K_I \cdot [S] +K_I \cdot K_m + K_m \cdot [I]} \)</p>
+<p>\( \Large    V_P= k_{+2}\cdot [E_T] \frac{K_I \cdot [S]}{K_I \cdot [S] +K_I \cdot K_m + K_m \cdot [I]}   \)</p>
+<p>\( \Large    V_P=  V_{max}\frac{K_I \cdot [S]}{K_I \cdot [S] +K_I \cdot K_m + K_m \cdot [I]}   \)</p>
+<p>となります．</p>
+<p>逆数を取ると，</p>
+<p>\( \Large    \begin{eqnarray} \frac{1}{V_P}&amp;=&amp;  \frac{1}{V_{max}} \frac{K_I \cdot [S] +K_I \cdot K_m + K_m \cdot [I]}{K_I \cdot [S]}   \\<br>
+  &amp;=&amp; 
+\frac{1}{V_{max}} + \frac{K_m}{V_{max}}\frac{K_I  +  [I]}{K_I } \frac{1}{[S]} \\<br>
+&amp;=&amp; 
+\frac{1}{V_{max}} + \frac{K_m}{V_{max}} \left( 1+ \frac{  [I]}{K_I } \right) \frac{1}{[S]} \\<br>
+\end{eqnarray}   \)  </p>
+<p>となります．阻害剤がないときと比べると，</p>
+<p>\( \Large    \frac{1}{V_P} ＝ 
+\frac{1}{V_{max}} + \frac{K_m }{V_{max}} \frac{1}{ [S]}      \)</p>
+<p>となり，</p>
+<p>\( \Large     K_m       \Longrightarrow K_m \left( 1+ \frac{  [I]}{K_I } \right)\)</p>
+<p>とK<sub>m</sub>値が大きくなっていることがわかります．逆にV<sub>max</sub>値は変わらないことがわかります．</p>
+<p>グラフで表すと，<span class="Large-Bold-Blue">K<sub>m</sub>値（X切片）は変化し，V<sub>max</sub>値（Y切片）は変わらない</span>ので，</p>
+<p><img src="Michaelis-Menten-06.png" width="600" height="414" alt=""/></p>
+<p>となります．</p>
+<p>次に，別の反応式の阻害剤がある時の計算を考えていきます．</p>
+<p>&nbsp;</p>
+<p><span class="style7"><a href="Michaelis-Menten-02.html"><img src="L-arrow.png" alt="l" width="57" height="34" border="0" /></a><a href="index.html"><img src="TOP.png" alt="t" width="57" height="34" /></a></span><a href="Michaelis-Menten-04.html"><img src="R-arrow.png" alt="r" width="57" height="34" /></a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>

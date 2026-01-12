@@ -1,0 +1,158 @@
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+    processEscapes: true
+  },
+  TeX: {
+    extensions: ["mhchem.js"]
+  },
+  CommonHTML: {
+    matchFontHeight: false
+  }
+});
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML">
+</script>
+
+
+	
+
+
+
+<link href="160324.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+.style7 {color: #000000; }
+</style>
+</head>
+
+<body>
+<p class="X-Large-Bold-RED">ミカエリスメンテン-01</p>
+<p class="Large-Bold-Red">&nbsp;</p>
+<p>ミカエリスメンテン反応式については，どの生化学の教科書にも記載されていますが，再度確認していこうと思います．</p>
+<p>この記事は，ストライヤー，およびヨビノリさんのYoutubeを参考にしました，ありがとうございます．</p>
+<p>&nbsp;</p>
+<p class="Large-Bold-Blue">・化学反応</p>
+<p>一次の化学反応式は，</p>
+<p>\( \Large     \ce{S -&gt;C[k] P} \)</p>
+<p>とS（基質，Substrate）が反応速度ｋでP（生成物，Product）に変換される反応として考えましょう．</p>
+<p>ここで，生成物Pの生成速度は，</p>
+<p>\( \Large     V_P = k [S] \)</p>
+<p>となり，各単位は，</p>
+<p>\( \Large     V_P \ : \ \frac{M}{s} = \frac{mol}{L \cdot s} \)</p>
+<p>\( \Large     k \ :  \frac{1}{s} \)</p>
+<p>\( \Large     [S] \ : \ M \)</p>
+<p>となります．</p>
+<p>&nbsp;</p>
+<p class="Large-Bold-Blue">・酵素反応</p>
+<p>酵素は，上記の化学反応の速度定数ｋを上昇させる能力を持つと考えるを良いと思います．</p>
+<p>生成速度はｋに比例するので，酵素を大量に入れると生成速度も比例して上昇することになります．</p>
+<p>しかし，現実には，<br>
+　酵素はいっぱいあっても，基質が少なければ，生成速度は頭打ちになる<br>
+　基質はいっぱいあっても，酵素が間に合わなければ，生成速度は頭打ちになる<br>
+こととなります．</p>
+<p>これらのことを考慮して，酵素反応を考えよう，というのがミカエリスメンテン反応式です．</p>
+<p>&nbsp;</p>
+<p class="Large-Bold-Blue">・ミカエリスメンテン反応式</p>
+<p>そこで，もう少し厳密に酵素反応を考えていきましょう．</p>
+<p>厳密に考えると<br>
+　基質と酵素が結合・解離を繰り返す<br>
+　そのうち，一部の複合体において基質が生成物に変換される<br>
+　酵素ー生成物が解離して，生成物が生成される<br>
+となります．</p>
+<p>式で表すと，</p>
+<p>\( \Large     \ce{E + S &lt;=&gt;ES -&gt; EP -&gt; E + P} \)</p>
+<p>となります．簡単のために，EPはすぐに解離するとして，</p>
+<p>\( \Large     \ce{E + S &lt;=&gt;ES -&gt; E + P} \)</p>
+<p>それぞれの速度定数を考えて，</p>
+<p>\( \Large     \ce{E + S &lt;=&gt;C[k_{+1}][k_{-1} ]ES -&gt;C[k_{+2}] E + P} \)</p>
+<p>となります．</p>
+<p>ここで，<span class="Blue-Bold">保存則</span>は，</p>
+<p>\( \Large     S + P =const \)</p>
+<p>\( \Large     E + ES =const \)</p>
+<p>初期条件は，t=0で</p>
+<p>\( \Large     S(0) =1, \  P(0) = 0 \)</p>
+<p>\( \Large     E(0) =1, \  ES(0) = 0 \)</p>
+<p>となります．この反応式を厳密に説いてもいいのですが．．．概要を考えていきましょう．</p>
+<p>・t=0<br>
+　S=0, P=0, E=1, ES=0です</p>
+<p>・反応スタート<br>
+　Sは徐々に減少していきます．Pは若干の遅れの後増えていきます<br>
+　ES複合体が作られるので，Eは減ります．でも生成物の生成とともにEも増えるので０にはなりません．</p>
+<p>・反応中<br>
+　E，ESはある程度一定値となります（厳密には一定にはなりませんが）</p>
+<p>・十分反応したら<br>
+　Sが少なくなるので，それに伴いESも減少します．<br>
+　Pも増えていきますが，Sがなくなるので一定値となります．<br>
+　EはSがなくなり，反応が進まなくなるので，もとの値となります．<br>
+　ESもSがなくなるので，０となります．</p>
+<p>となります．図示すると，</p>
+<p><img src="Michaelis-Menten-01.png" width="600" height="402" alt=""/></p>
+<p>となります．ここで，E，ESが一定の定常状態を考えていきましょう．</p>
+<p><img src="Michaelis-Menten-02.png" width="600" height="402" alt=""/></p>
+<p>色付けした部分です．ここでは，</p>
+<p>E，ES濃度は一定，生成速度も一定</p>
+<p>が成り立ちます．生成速度，[ES]の時間変化は，</p>
+<p>\( \Large    V_P= k_{+2} \cdot [ES] \)</p>
+<p>  \( \Large    0 = \frac{d [ES]}{dt} = k_{+1} \cdot [E] \cdot [S] - ( k_{-1} + k_{+2} ) \cdot [ES] \)</p>
+<p>\( \Large     k_{+1} \cdot [E] \cdot [S] = ( k_{-1} + k_{+2} ) \cdot [ES] \)</p>
+<p>\( \Large     \begin{eqnarray} [ES] &amp;=&amp; \frac{k_{+1}}{ k_{-1} + k_{+2} } \cdot [ES] \\<br>
+  &amp;=&amp; 
+\frac{1}{ K_m } \cdot [E] \cdot [S] \\<br>
+\end{eqnarray}   \)</p>
+<p>ここで，</p>
+<p>\( \Large     K_m \equiv \frac{ k_{-1} + k_{+2}}{k_{+1}} \)</p>
+<p>です．ここで酵素濃度の保存則，</p>
+<p>\( \Large     [E_T] = [E] + [ES] \)</p>
+<p>を使うと，</p>
+<p>\( \Large      [ES] = 
+\frac{[S]}{ K_m } \cdot ( [E_T] +  [ES] ) \)</p>
+<p>\( \Large      \left(1 + \frac{[S]}{K_m} \right) \cdot[ES] = 
+\frac{[S]}{ K_m } \cdot [E_T]  \)</p>
+<p>\( \Large      \begin{eqnarray} [ES] &amp;=&amp; \frac{K_m}{K_m + [S]} \cdot 
+\frac{[S]}{ K_m } \cdot [E_T]  \\<br>
+&amp;=&amp; 
+\frac{[S]}{K_m + [S]}  \cdot [E_T]  \\<br>
+\end{eqnarray}   \)</p>
+<p>生成速度は，</p>
+<p>\( \Large    V_P= k_{+2} \cdot [ES] \)</p>
+<p>ですので，</p>
+<p>\( \Large    V_P= k_{+2}\cdot [E_T] \cdot \frac{[S]}{K_m + [S]}   \)</p>
+<p>となります．ここで基質濃度[S]をいろいろな場合について考えていきましょう．</p>
+<p>・[S]=0</p>
+<p>\( \Large    V_P= 0   \)</p>
+<p>当然ながらもととなる基質がないので，生成速度は０となります．</p>
+<p>・[S] &lt;&lt; K</sub>m</p>
+<p>この場合には，分母がK</sub>mとなるので，生成速度は，[S]に比例します．</p>
+<p>\( \Large    V_P \approx \frac{k_{+2}\cdot [E_T]}{K_m} \cdot [S]   \)</p>
+<p>・[S] &gt;&gt; K</sub>m</p>
+<p>この場合には，分母が[S]となるので，最大速度</p>
+<p>\( \Large    V_{max} \approx k_{+2}\cdot [E_T]   \)</p>
+<p>となります．したがって，まとめると，</p>
+<p>\( \Large    V_P=  V_{max} \cdot \frac{[S]}{K_m + [S]}   \)</p>
+<p>となります．図示すると，</p>
+<p><img src="Michaelis-Menten-03.png" width="600" height="362" alt=""/></p>
+<p>という曲線となります．ここで，[S]=K</sub>mの場合は，</p>
+<p>\( \Large    V_P=  \frac{1}{2} V_{max}    \)</p>
+<p>となるので，生成速度が最大速度の半分になる基質濃度がK</sub>mとなります．</p>
+<p><img src="Michaelis-Menten-04.png" width="600" height="332" alt=""/></p>
+<p>&nbsp;</p>
+<p class="Large-Bold-Blue">・V<sub>max</sub>, K<sub>m</sub>値の求め方</p>
+<p>一般的に使われる方法は，両逆数プロットです．</p>
+<p>両辺の逆数を取ると，</p>
+<p>\( \Large    V_P=  V_{max} \cdot \frac{[S]}{K_m + [S]}   \)</p>
+<p>\( \Large    \begin{eqnarray} \frac{1}{V_P} &amp;=&amp;  \frac{1}{V_{max}} \cdot \frac{K_m + [S]}{ [S]}   \\<br>
+  &amp;=&amp; 
+\frac{1}{V_{max}} + \frac{K_m }{V_{max}} \frac{1}{ [S]}   \\<br>
+\end{eqnarray}   \)</p>
+<p>となり，\( \Large    \frac{1}{V_P}   \)と\( \Large    \frac{1}{[S]}   \)，でグラフを書くと直線関係となります．</p>
+<p><img src="Michaelis-Menten-05.png" width="600" height="412" alt=""/></p>
+<p>さらには，Y軸との交点が，\( \Large    \frac{1}{V_{max}}   \)，X軸との交点が，\( \Large    \frac{1}{K_m}   \)，となります．</p>
+<p>次に，もう少し簡単に求める方法，<span class="Large-Bold-Red">解離定数</span>，を使っての計算を考えていきます．</p>
+<p>&nbsp;</p>
+<p><span class="style7"><a href="index.html"><img src="TOP.png" alt="t" width="57" height="34" /></a></span><a href="Michaelis-Menten-02.html"><img src="R-arrow.png" alt="r" width="57" height="34" /></a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>

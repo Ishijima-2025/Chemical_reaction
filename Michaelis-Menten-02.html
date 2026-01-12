@@ -1,0 +1,58 @@
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+    processEscapes: true
+  },
+  TeX: {
+    extensions: ["mhchem.js"]
+  },
+  CommonHTML: {
+    matchFontHeight: false
+  }
+});
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML">
+</script>
+
+
+	
+
+
+
+<link href="160324.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+.style7 {color: #000000; }
+</style>
+</head>
+
+<body>
+<p class="X-Large-Bold-RED">ミカエリスメンテン-02</p>
+<p class="Large-Bold-Red">&nbsp;</p>
+<p>ミカエリスメンテン反応式について，<a href="Michaelis-Menten-01.html">前ページ</a>では，速度定数から考えてきましたが，今回は<span class="Large-Bold-Red">解離定数</span>から考えていきましょう．</p>
+<p>このほうが計算がだいぶ簡単になります．</p>
+<p>\( \Large     \ce{E + S &lt;=&gt;C[k_{+1}][k_{-1} ]ES -&gt;C[k_{+2}] E + P} \)</p>
+<p>ですが，解離定数を定義します．</p>
+<p>\( \Large     K_m \equiv \frac{[E][S]}{[ES]} \)</p>
+<p>酵素の保存則，</p>
+<p>\( \Large     [E_T] = [E] + [ES] \)</p>
+<p>を使うと，</p>
+<p>\( \Large     K_m = \frac{([E_T]-[ES])[S]}{[ES]} \)</p>
+<p>\( \Large     K_m [ES] = [E_T][S]-[ES][S] \)</p>
+<p>\( \Large     (K_m + [S]) [ES] = [E_T][S] \)</p>
+<p>\( \Large [ES] = [E_T] \frac{[S]}{ K_m + [S]} \)</p>
+<p>あとは<a href="Michaelis-Menten-01.html">前ページ</a>と同様に，</p>
+<p>\( \Large    V_P= k_{+2}\cdot [E_T] \cdot \frac{[S]}{K_m + [S]}   \)</p>
+<p>\( \Large    V_P=  V_{max} \cdot \frac{[S]}{K_m + [S]}   \)</p>
+<p>となります．</p>
+<p>ポイントは，</p>
+<p>　<span class="Large-Bold-Red">他の反応状態を考えずに，二状態の解離定数，で考える</span></p>
+<p>ですね．</p>
+<p>次に，阻害剤がある時の計算を考えていきます．</p>
+<p>&nbsp;</p>
+<p><span class="style7"><a href="Michaelis-Menten-01.html"><img src="L-arrow.png" alt="l" width="57" height="34" border="0" /></a><a href="index.html"><img src="TOP.png" alt="t" width="57" height="34" /></a></span><a href="Michaelis-Menten-03.html"><img src="R-arrow.png" alt="r" width="57" height="34" /></a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>

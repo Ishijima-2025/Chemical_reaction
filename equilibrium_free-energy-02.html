@@ -1,0 +1,66 @@
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+    processEscapes: true
+  },
+  TeX: {
+    extensions: ["mhchem.js"]
+  },
+  CommonHTML: {
+    matchFontHeight: false
+  }
+});
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML">
+</script>
+
+
+	
+
+
+
+<link href="160324.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+.style7 {color: #000000; }
+</style>
+<meta charset="UTF-8">
+</head>
+
+<body>
+<p class="X-Large-Bold-RED">私の疑問（活性化エネルギーをどう越える？）</p>
+<p>&nbsp;</p>
+<p>化学平衡論において，下図のような図がよく用いられます．</p>
+<p><img src="equilibrium_free-energy-02.png" width="695" height="430" alt=""/></p>
+<p>A状態とB状態にはΔEのエネルギー差があり，さらに，活性化エネルギーという障壁が存在します．</p>
+<p>その中で，AとBを行き来する分子はゆらぎながらたまたま障壁を超えることができた場合に異なる状態に遷移できます．</p>
+<p>私の理解では，</p>
+<p>\( \Large　k_{AB} = \omega \ exp \left[ -  \lambda \frac{ \Delta E}{k_B T} \right]\)</p>
+<p>\( \Large　k_{BA} =  
+\omega \ exp \left[  (  \lambda - 1) \frac{ \Delta E}{k_B T} \right]\)</p>
+<p>において，<span class="Blue-Bold">ω</span>，がこの障壁の高さ（活性化エネルギー）を表すものかな？と思っています（ここで，すでに間違っているかもしれないですが）</p>
+<p>すると，</p>
+<p>　<span class="Red-Bold">B　→　A</span>　：　<span class="Blue-Bold">活性化エネルギー</span>，を超えるエネルギー状態の場合，Aに遷移する</p>
+<p>　<span class="Red-Bold">A　→　B</span>　：　<span class="Blue-Bold">活性化エネルギー　+　ΔE</span>，を超えるエネルギー状態の場合，Bに遷移する</p>
+<p>となるので，B→A，の遷移においては，ΔEは関係ないことになります．</p>
+<p>たとえて言うと，<span class="Blue">崖を上るのは崖の高さに依存するけど，崖から落ちる場合は崖の高さは関係ない</span>．．．というように．．．</p>
+<p>となると，<span class="Blue-Bold">λ=1</span>，の場合，</p>
+<p>\( \Large　k_{AB} = \omega \ exp \left[ -  \frac{ \Delta E}{k_B T} \right]\)</p>
+<p>\( \Large　k_{BA} =  \omega \)</p>
+<p>となるのではないか，という単純な疑問が．．．</p>
+<p>これは，先ほど示しました，<a href="https://www.bdr.riken.jp/ja/research/labs/kawaguchi-k/index.html" target="_blank">理研の川口先生</a>，<a href="http://www.ton.scphys.kyoto-u.ac.jp" target="_blank">京都大学の佐々先生</a>，<a href="https://noneq.c.u-tokyo.ac.jp" target="_blank">東大の沙川先生</a>の<a href="https://www.cell.com/biophysj/fulltext/S0006-3495(14)00451-2" target="_blank">共著論文</a>（<a href="https://noguchi.issp.u-tokyo.ac.jp/projects/sfs/doc/nl/newsletter-Vol5.pdf" target="_blank">佐野領域のニュースレター</a>はこちら）では，<span class="Blue-Bold">λ≒０</span>，がとは真逆の結果となります．</p>
+<p>&nbsp;</p>
+<p>そもそも，</p>
+<p>　<span class="Blue-Bold">活性化エネルギーは，ΔE（もしくはE<sub>A</sub>,E<sub>B</sub>）に依存しない</span></p>
+<p>という考え自体が間違いなのかもしれません．</p>
+<p>まだ，もやもやしている状態です．</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span class="style7"><a href="equilibrium_free-energy-01.html"><img src="L-arrow.png" alt="l" width="57" height="34" border="0" /></a><a href="index.html"><img src="TOP.png" alt="t" width="57" height="34" /></a></span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>

@@ -1,0 +1,111 @@
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+    processEscapes: true
+  },
+  TeX: {
+    extensions: ["mhchem.js"]
+  },
+  CommonHTML: {
+    matchFontHeight: false
+  }
+});
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML">
+</script>
+
+
+	
+
+
+
+<link href="160324.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+.style7 {color: #000000; }
+</style>
+<meta charset="UTF-8">
+</head>
+
+<body>
+<p class="X-Large-Bold-RED">速度定数とエネルギー差</p>
+<p>&nbsp;</p>
+<p><span class="Red-Bold">化学反応論</span>，　<span class="Red-Bold">化学平衡論</span>で<span class="Red-Bold">反応式</span>についていろいろ学びましたが，<span class="Red-Bold">自由エネルギー</span>との関係を考えていきましょう．</p>
+<p>単純な一次の化学平衡において，</p>
+<p>\( \Large     \hspace{15 pt} \ce{A  &lt;=&gt;C[ k_{AB} ][k_{BA}]B} \)</p>
+<p>を考えます．A状態とB状態は平衡状態にあり，各々行き来しながらそれぞれの滞在割合は一定であると言えます．</p>
+<p>この場合の平衡は，</p>
+<p>\( \Large     k_{BA} \cdot P(A) = k_{AB} \cdot P(B) \)</p>
+<p>となるので，平衡定数Kを使って，</p>
+<p>\( \Large     K \equiv \frac{k_{BA}}{k_{AB}} = \frac{ P(B)}{ P(A)} \)</p>
+<p>となります（平衡状態においてKの定義が上記でいいのか，その逆数がいいのかは，よく知らないです）</p>
+<p>&nbsp;</p>
+<p>もし，AとBが同じエネルギー状態なら，その比は，１；１と等しくなるはずです．</p>
+<p>しかし，もし，<span class="Blue">エネルギー状態がBのほうがAより高ければ</span>，エネルギー状態が高いBには存在しづらくなりますので，その比は，</p>
+<p>\( \Large     P(B) &lt; P(A) \)</p>
+<p>となります．</p>
+<p>このエネルギー状態による存在割合を，ボルツマン分布，によって説明できるとすると，各状態のエネルギー状態をE<sub>A</sub>, E<sub>B</sub>,とすると，</p>
+<p><img src="equilibrium_free-energy-01.png" width="298" height="403" alt=""/></p>
+<p>\( \Large     P(A) \propto exp \left[ - \frac{E_A}{k_B T} \right]\)</p>
+<p>\( \Large     P(B) \propto exp \left[ - \frac{E_B}{k_B T} \right]\)</p>
+<p>この関係を上記の平衡定数に当てはめてみると，</p>
+<p>\( \Large     K  = \frac{ P(B)}{ P(A)}<br>
+=\displaystyle \frac{exp \left[ - \frac{E_B}{k_B T} \right]}{exp \left[ - \frac{E_A}{k_B T} \right]} <br>
+=
+exp \left[ - \frac{E_B-E_A}{k_B T} \right]<br>
+=
+exp \left[ - \frac{ \Delta E}{k_B T} \right]<br>
+\hspace{40 pt} (\Delta E \equiv E_B-E_A) \)</p>
+<p>速度定数は，</p>
+<p>\( \Large\frac{k_{BA}}{k_{AB}} = exp \left[ - \frac{ \Delta E}{k_B T} \right]\)</p>
+<p>となります．</p>
+<p>速度定数の比とエネルギー差との関係はわかりましたが，このエネルギー差をどう配分するかがわかりません．</p>
+<p>そこで，<span class="Blue-Bold">絶対的な速度（もしくは比例定数）をω</span>として，<span class="Blue-Bold">λ，ν，</span>というパラメータを用意します．</p>
+<p>\( \Large　k_{AB} = \omega \ exp \left[ - \lambda \frac{ \Delta E}{k_B T} \right]\)</p>
+<p>\( \Large　k_{BA} =  \omega \ exp \left[ - \nu \frac{ \Delta E}{k_B T} \right]\)</p>
+<p>\( \Large\frac{k_{BA}}{k_{AB}} = \displaystyle \frac{\omega \exp \left[ -   \lambda \frac{ \Delta E}{k_B T} \right]}{\omega \exp \left[ -   \nu \frac{ \Delta E}{k_B T} \right]}<br>
+  = \exp \left[ -  (  \lambda -  \nu ) \frac{ \Delta E}{k_B T} \right]
+\)</p>
+<p>となるので，</p>
+<p>\( \Large  \lambda -  \nu  = 1
+\)</p>
+<p>の条件を満たす必要があります．したがって，</p>
+<p>\( \Large   \nu  =   \lambda 
+- 1\)</p>
+<p>となるので，</p>
+<p>\( \Large　k_{AB} = \omega \ exp \left[ -  \lambda \frac{ \Delta E}{k_B T} \right]\)</p>
+<p>\( \Large　k_{BA} =  \omega \ exp \left[ - (  \lambda - 1 ) \frac{ \Delta E}{k_B T} \right] \)</p>
+<p>と表すことができます．</p>
+<p>&nbsp;</p>
+<p>もし，<span class="Blue-Bold">λ=1</span>，の場合は，</p>
+<p>\( \Large　k_{AB} = \omega \ exp \left[ -  \frac{ \Delta E}{k_B T} \right]\)</p>
+<p>\( \Large　k_{BA} =  \omega \)</p>
+<p>もし，<span class="Blue-Bold">λ=0</span>，の場合は，</p>
+<p>\( \Large　k_{AB} = \omega \)</p>
+<p>\( \Large　k_{BA} =  \omega  \ exp \left[   \frac{ \Delta  E}{k_B T} \right]\)</p>
+<p>とどちらかが，エネルギー差に依らない速度定数となります．</p>
+<p>この，λ，は今のところ未知数（多分）で，単純に，</p>
+<p>　<span class="Large-Bold-Blue">λ = 0.5</span></p>
+<p>とおけば，</p>
+<p>\( \Large　k_{AB} = \omega \ exp \left[ - 0.5 \frac{ \Delta E}{k_B T} \right]<br>
+= \omega \ exp \left[ - \frac{ \Delta E}{2 \ k_B T} \right] \)</p>
+<p>\( \Large　k_{BA} =  \omega \ exp \left[ - (0.5 - 1 ) \frac{ \Delta E}{k_B T} \right]<br>
+  =
+\omega \ exp \left[   \frac{ \Delta E}{2 \ k_B T} \right]\)</p>
+<p>と指数の中の分母に<span class="Blue-Bold">２</span><span class="Blue-Bold">(=1/0.5</span>)がつきます．</p>
+<p>実は<a href="https://www.sciencedirect.com/science/article/pii/S0022283603001761" target="_blank">私の論文リスト</a>の中にもさり気なく，この<span class="Blue-Bold">２</span>を使って計算しています．</p>
+<p>また，<a href="https://www.science.org/doi/10.1126/science.1182105" target="_blank">Fan Bai, Richard Berry.の論文</a>にも<span class="Blue-Bold">0.5</span>を使っています(Supporting Online Materialのp.31)</p>
+<p>．</p>
+<p>ただ，岡田新学術でご一緒した，<a href="https://www.bdr.riken.jp/ja/research/labs/kawaguchi-k/index.html" target="_blank">理研の川口先生</a>，<a href="http://www.ton.scphys.kyoto-u.ac.jp" target="_blank">京都大学の佐々先生</a>，<a href="https://noneq.c.u-tokyo.ac.jp" target="_blank">東大の沙川先生</a>の<a href="https://www.cell.com/biophysj/fulltext/S0006-3495(14)00451-2" target="_blank">共著論文</a>（<a href="https://noguchi.issp.u-tokyo.ac.jp/projects/sfs/doc/nl/newsletter-Vol5.pdf" target="_blank">佐野領域のニュースレター</a>はこちら）では，<span class="Blue-Bold">λ≒０</span>，がF1ATP合成酵素において成り立つという実験と理論から導き出しています．</p>
+<p>このパラメータが，物理化学的にどのような意味を持つのか，は私にはわかりません．</p>
+<p>また，前から気になっていた点も別ページに，記載します．</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span class="style7"><a href="index.html"><img src="TOP.png" alt="t" width="57" height="34" /></a></span><a href="equilibrium_free-energy-02.html"><img src="R-arrow.png" alt="r" width="57" height="34" /></a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>
